@@ -12,14 +12,23 @@
             console.log('Esto también son números: ' + 'a' + 'b' + 'c')
             window. print(number);
     
-            let string = 'Esto es un string';
-            console.log(string);
-            window. print(string);
+            let palabra1 = 'Esto';
+            let palabra2 = 'es';
+            let palabra3 = 'un';
+            let palabra4 = 'string';
+            let string = 'Esto también es un string';
+
+            console.log('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
+            console.log('Esto es un string de varias palabras: "' + string + '.');
+            window.print('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
+            window. print('Esto es un string de varias palabras: "' + string + '.');
 
             let boolean = true;
+            let boolean2 = false; 
             console.log(boolean);
+            console.log(boolean2);
             window.print(boolean);
-
+            window.print(boolean2);
 
 
     /*● De las variables declaradas anteriormente, identifica las que son de tipo integer y realiza operaciones
@@ -30,17 +39,23 @@
         let multiplicacion =  decimal * e;
         let division = a/b;
 
-        console.log('El resultado de la suma de let number y let a es ' + suma);
-        console.log('El resultado de la resta de let c y let b es ' + resta);
-        console.log('El resultado de la multiplicación de let decimal ('+ decimal +') y let e('+e+') es ' + multiplicacion);
-        console.log('El resultado de la suma de let number y let a es ' + suma);
-        
+        console.log('El resultado de la suma de let number y let a es ' + suma + '. Este numero es un integer porque es un numero entero');
+        console.log('El resultado de la resta de let c y let b es ' + resta + '.Este tambien es integer.');
+        console.log('El resultado de la multiplicación de let decimal ('+ decimal +') y let e('+e+') es ' + multiplicacion + '.Este numero es tipo floar porque es un decimal.');
+        console.log('El resultado de la división de let a y let b es ' + division + '. El resultado es un integer');
+
+        window.print('El resultado de la suma de let number y let a es ' + suma + '. Este numero es un integer porque es un numero entero');
+        window.print('El resultado de la resta de let c y let b es ' + resta + '.Este tambien es integer.');
+        window.print('El resultado de la multiplicación de let decimal ('+ decimal +') y let e('+e+') es ' + multiplicacion + '.Este numero es tipo floar porque es un decimal.'); 
+        window.print('El resultado de la división de let a y let b es ' + division + '. El resultado es un integer'); 
+ 
         
 
 
     /*● De las variables declaradas anteriormente, identifica las que son de tipo texto y concatena dichas
         cadenas de texto.Deberás imprimir el resultado por la pantalla del navegador y la consola.
         */
+
 
 
 
