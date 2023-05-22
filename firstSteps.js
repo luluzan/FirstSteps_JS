@@ -67,8 +67,6 @@
         window.print('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
         window. print('Esto es un string de varias palabras: "' + string + '.');
 
-        let boolean = true;
-        let boolean2 = false; 
         console.log(boolean);
         console.log(boolean2);
         window.print(boolean);
