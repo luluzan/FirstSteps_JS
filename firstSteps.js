@@ -47,15 +47,13 @@
 
         console.log('El resultado de la suma de let number y let a es ' + suma + '. Este numero es un integer porque es un numero entero');
         console.log('El resultado de la resta de let c y let b es ' + resta + '.Este tambien es integer.');
-        console.log('El resultado de la multiplicación de let decimal ('+ decimal +') y let e('+e+') es ' + multiplicacion + '.Este numero es tipo floar porque es un decimal.');
+        console.log('El resultado de la multiplicación de let decimal ('+ decimal +') y let e('+ e +') es ' + multiplicacion + '.Este numero es tipo floar porque es un decimal.');
         console.log('El resultado de la división de let a y let b es ' + division + '. El resultado es un integer');
 
         alert('El resultado de la suma de let number y let a es ' + suma + '. Este numero es un integer porque es un numero entero');
         alert('El resultado de la resta de let c y let b es ' + resta + '.Este tambien es integer.');
         alert('El resultado de la multiplicación de let decimal ('+ decimal +') y let e('+e+') es ' + multiplicacion + '.Este numero es tipo floar porque es un decimal.'); 
         alert('El resultado de la división de let a y let b es ' + division + '. El resultado es un integer'); 
- 
-        
 
 
     /*● De las variables declaradas anteriormente, identifica las que son de tipo texto y concatena dichas
@@ -78,31 +76,158 @@
 //FUNCIONES
     /*● Crear una función que imprima por la pantalla del navegador y la consola el mensaje "Hola, [nombre]"
         con un parámetro para el nombre.*/
+
+        function saludito(nombre){
+        return'Hola ' + nombre;
+        }
+
+        console.log(saludito(Lucía));
+
+
     /*● Crear función que reciba como parámetros dos números y que devuelva la suma de ellos. Deberás
         imprimir el resultado por la pantalla del navegador y la consola.*/
+
+        function funcionSuma(a,b){
+            return a + b; 
+        }
+
+        let resultado = funcionSuma(5,7);
+
+        console.log(resultado);
+        document.write('El resultado de la suma es: ' + resultado);
+
     /*● Crear función que determine si un número es par o impar. Deberás imprimir el resultado por la pantalla
         del navegador y la consola.*/
+
+        function parImpar(numero){
+            if (numero % 2 === 0) {
+                return 'par';
+            } else {
+                return 'impar';
+            }
+        }
+        let queEs10 = parImpar(10);
+        console.log(QueEs10);
+        document.write(queEs10);
+
+        let queEs7 = parImpar(7);
+        console.log(queEs7);
+        document.write(queEs7);
+
+
+
 
 
 /*OBJETOS
 Todo lo que retorne cada función se debe imprimir el resultado por la pantalla del navegador y la consola.
-● Crear un objeto carro haciendo la abstracción de sus atributos y un objeto anidado.
-● Crear una función que devuelva la marca del carro.
-● Crear una función que devuelva la cantidad de puertas que tiene el carro.
-● Crear una función que devuelva un atributo del objeto anidado.*/
+● Crear un objeto carro haciendo la abstracción de sus atributos y un objeto anidado.*/
+        // Crear objeto coche con atributos
+            let coche = {
+            marca: 'Renault',
+            modelo: 'Arkana',
+            motor: {
+                tipo: 'Gasolina',
+                hibrido: true,
+            },
+            color: 'negro',
+            precio: 34500,
+            anyo: 2023,
+            puertas: 5,
+
+            };
+
+        // Acceder a los atributos del objeto coche
+            console.log('Marca: ' + coche.marca);
+            console.log('Modelo: ' + coche.modelo);
+            console.log('Motor: ' + coche.motor.tipo + ' (Híbrido: ' + coche.motor.hibrido + ')');
+            console.log('Color: ' + coche.color);
+            console.log('Precio: ' + coche.precio);
+            console.log('Año: ' + coche.anyo);
 
 
-/*ARRAYS
-● Crear un array de 10 números
-● Crear una función que imprima en consola todos los números de un array (Investigar ciclo for)
-● Crear una función que añada un número al array
-● Crear una función que elimine los números pares de ese array.
-● Crear una función que devuelva el número mayor de un array.
-● Crear una función que devuelva el número menor de un array.
-● Crear un función que convierta en minúsculas todas las letras de un texto.
-● Crear una función que convierta en mayúsculas todas las letras de un texto.
-● Crear una función que reciba un array de nombres y que convierta la primera letra de cada nombre en
-mayúscula.*/
+//● Crear una función que devuelva la marca del carro.
+            function marca(coche){
+                return coche.marca;
+            }
+            //console.log('El coche es de la marca ' + marca(coche)) +'.';
+
+//● Crear una función que devuelva la cantidad de puertas que tiene el carro.
+            function puertas(coche){
+                return coche.puertas; 
+            }
+             //console.log('El coche tiene ' + puertas(coche) + ' puertas.');
+
+// Crear una función que devuelva un atributo del objeto anidado.*/
+            function atributoAnidadoTipo (coche){
+                return coche.motor.tipo  
+            } 
+             //console.log(atributoAnidadoTipo(coche))
+
+//ARRAYS
+// Crear un array de 10 números
+    arrayNumerico = [2,4,6,8,10,12,14,16,18,20];
+    console.log(arrayNumerico.length);
+
+// Crear una función que imprima en consola todos los números de un array (Investigar ciclo for)
+    function imprimirArray(array){
+        for ( i=0; i<array.length; i++) {
+        console.log(array)
+        }}
+
+    console.log(imprimirArray(arrayNumerico))
+//● Crear una función que añada un número al array
+    function anyadirNumero(array,numero){
+        arrayNumerico.push(numero);
+        return arrayNumerico
+    }
+    console.log(anyadirNumero(arrayNumerico,3))
+//Crear una función que elimine los números pares de ese array.
+     /*function quitarPares(array){
+        const arrayImpar = [];
+        for (i=0; i>array.length; i++){
+            if (array[i] % 2 !== 0){
+                arrayImpar.push(array[i]);
+            }
+        }
+        return arrayImpar;
+        }
+
+        console.log(arrayImpar)*/
+
+
+function sinParFilter(array){
+    return array.filter(numero => numero % 2 !== 0);
+}
+console.log(sinParFilter(arrayNumerico));
+
+// Crear una función que devuelva el número mayor de un array.
+function elNumeroMayor(array) {
+    let mayor = array[0]; 
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] > mayor) {
+        mayor = array[i];
+        }
+    }
+    return mayor;
+}
+    console.log(elNumeroMayor(arrayNumerico))
+
+//Crear una función que devuelva el número menor de un array.
+    function elNumeroMenor(array) {
+        let menor = array[0]; 
+        for (let i = 1; i > array.length; i++) {
+        if (array[i] < menor) {
+            menor = array[i];
+            }
+        }
+        return menor;
+    }
+        console.log(elNumeroMenor(arrayNumerico))
+//Crear un función que convierta en minúsculas todas las letras de un texto.
+let fraseEjemplo = 
+
+//Crear una función que convierta en mayúsculas todas las letras de un texto.
+//Crear una función que reciba un array de nombres y que convierta la primera letra de cada nombre en mayúscula.*/
 
 
 /*MANIPULACIÓN DEL DOM
