@@ -18,7 +18,13 @@
             let palabra4 = 'string';
             let string = 'Esto también es un string';
 
-            console.log('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
+            console.log('La palabra1 es "' + palabra1 +'".')
+            console.log('La palabra2 es "' + palabra2 +'".')
+            console.log('La palabra3 es "' + palabra3 +'".')
+            console.log('La palabra4 es "' + palabra4 +'".')
+
+
+
             console.log('Esto es un string de varias palabras: "' + string + '.');
             window.print('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
             window. print('Esto es un string de varias palabras: "' + string + '.');
@@ -56,6 +62,17 @@
         cadenas de texto.Deberás imprimir el resultado por la pantalla del navegador y la consola.
         */
 
+        console.log('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
+        console.log('Esto es un string de varias palabras: "' + string + '.');
+        window.print('Esto es una concateneción de strings. "' + palabra1 + ' ' + palabra2 + ' ' + palabra3 + ' ' + palabra4 + '".')
+        window. print('Esto es un string de varias palabras: "' + string + '.');
+
+        let boolean = true;
+        let boolean2 = false; 
+        console.log(boolean);
+        console.log(boolean2);
+        window.print(boolean);
+        window.print(boolean2);
 
 
 
