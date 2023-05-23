@@ -224,9 +224,18 @@ function elNumeroMayor(array) {
     }
         console.log(elNumeroMenor(arrayNumerico))
 //Crear un función que convierta en minúsculas todas las letras de un texto.
-let fraseEjemplo = 
+let fraseParaTransformar = "JuguemoS cOn esTA frASe";
+function transformarAminusculas (fraseParaTransformar){
+    return (fraseParaTransformar.toUpperCase)
+}
+console.log(transformarAminusculas(fraseParaTransformar));
 
 //Crear una función que convierta en mayúsculas todas las letras de un texto.
+let fraseParaTransformar = "Juguemos con esta frase";
+function transformarAminusculas (fraseParaTransformar){
+    return (fraseParaTransformar.toUpperCase)
+}
+console.log(transformarAminusculas(fraseMinusculas));
 //Crear una función que reciba un array de nombres y que convierta la primera letra de cada nombre en mayúscula.*/
 
 
