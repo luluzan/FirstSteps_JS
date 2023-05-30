@@ -1,14 +1,14 @@
 //VARIABLES
     /*● Crear variables de diferentes tipos de datos: número, cadena de texto, booleano e imprimir su valor por
         la pantalla del navegador y la consola.*/
-            let number = 10;
-            let decimal = 14.25;
+            let integer = 10;
+            let float = 14.25;
             let a = 20;
             let b = 6;
             let c = 9;
             let d = 2.5;
             let e = 7.1;
-            console.log(number);
+            console.log(integer);
             console.log('Esto también son números: ' + 'a' + 'b' + 'c')
             alert(number);
     
@@ -76,7 +76,7 @@
 //FUNCIONES
     /*● Crear una función que imprima por la pantalla del navegador y la consola el mensaje "Hola, [nombre]"
         con un parámetro para el nombre.*/
-
+//crear get element by id
         function saludito(nombre){
         return'Hola ' + nombre;
         }
@@ -231,11 +231,11 @@ function transformarAminusculas (fraseParaTransformar){
 console.log(transformarAminusculas(fraseParaTransformar));
 
 //Crear una función que convierta en mayúsculas todas las letras de un texto.
-let fraseParaTransformar = "Juguemos con esta frase";
-function transformarAminusculas (fraseParaTransformar){
+
+function transformarAmayusculas (fraseParaTransformar){
     return (fraseParaTransformar.toUpperCase)
 }
-console.log(transformarAminusculas(fraseMinusculas));
+console.log(transformarAmayusculas(fraseParaTransformar));
 //Crear una función que reciba un array de nombres y que convierta la primera letra de cada nombre en mayúscula.*/
 
 
