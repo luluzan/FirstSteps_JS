@@ -268,3 +268,25 @@ magicButton.addEventListener("click", function() {
     }
 });
 
+
+let nombresIntroducidos = [];
+let listadoNombres = document.getElementById("listaNombres");
+let nombresAnyadidosXbtn = document.getElementById("AnyadirNombres");
+
+nombresAnyadidosXbtn.addEventListener("click", function() {
+    for (var i = 0; i < 10; i++) {
+    let persona = prompt("Escribe un nombre:");
+    nombresIntroducidos.push(persona);
+    }
+    
+    listadoNombres.innerHTML = "";
+    for (var i = 0; i < nombresIntroducidos.length; i++) {
+    let persona = nombresIntroducidos[i];
+    let li = document.createElement("li");
+    li.textContent = persona;
+    listadoNombres.appendChild(li);
+    }
+});
+
+
+
